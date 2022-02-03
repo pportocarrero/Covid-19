@@ -13,3 +13,6 @@ You can use the python projects (positivos covid-19.ipynb and fallecidos covid-1
 
 # Source
 All data is taken from the open data repository of the Peruvian Government.
+
+# Credits
+All work is done solely by me. Please contact me for comments and inquiries (see my e-mail in my profile info).
