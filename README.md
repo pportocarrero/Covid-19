@@ -1,8 +1,9 @@
 # Covid-19
 A (very) early project on Covid-19 data in Peru.
 
-Currently, it shows an streamlit dashboard with data on confirmed cases and deaths nationwide and by regions in Peru.
+Currently, it shows -through a streamlit dashboard- data on confirmed cases and deaths nationwide and by regions in Peru.
 
+# What's next
 The very near roadmap includes implementing new information on hospitalizations and vaccionation in Peru as well as more granular data to the provincial and district level.
 
 # Instructions
