@@ -5,6 +5,8 @@ Currently, it shows an streamlit dashboard with data on confirmed cases and deat
 
 The very near roadmap includes implementing new information on hospitalizations and vaccionation in Peru as well as more granular data to the provincial and district level.
 
+# Instructions
 Just run the dashboard.py as a streamlit app through Powershell prompt in Anaconda. You can use the python projects (positivos y fallecidos) to update the data daily.
 
+# Source
 All data is taken from the open data repository of the Peruvian Government.
