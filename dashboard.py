@@ -6,10 +6,6 @@ import plotly.express as px
 import plotly.graph_objs as go
 import pandas as pd
 
-# -----------------------------------------------------------
-
-# Helper functions
-# -----------------------------------------------------------
 # Load data from external source
 
 path = r'C:/Users/pport/OneDrive/Projects/Covid-19/casos_positivos.xlsx'
@@ -120,30 +116,26 @@ df_d_tac = pd.read_excel(path_d_tac)
 df_d_tum = pd.read_excel(path_d_tum)
 df_d_uca = pd.read_excel(path_d_uca)
 
-# -----------------------------------------------------------
-
 # Sidebar
-# -----------------------------------------------------------
 
 types = {'Información': ['Casos positivos', 'Hospitalizados', 'Fallecidos', 'Vacunación']}
 types_df = pd.DataFrame(types)
 clist = types_df['Información'].unique()
 sidebar_options = st.sidebar.selectbox('Seleccione la información a visualizar:', clist)
 
-# -----------------------------------------------------------
+# MAIN
 
-# Main
-# -----------------------------------------------------------
-# Create a title for your app
+# CONFIRMED CASES
+
 
 if sidebar_options == 'Casos positivos':
     
     st.title('Casos Covid-19 a nivel nacional')
 
-# A description
+# Description
     st.write('Casos positivos reportados a través del portal de datos abiertos del Ministerio de Salud.')
 
-# Display the dataframe
+# Display the chart
     fig_casos = px.bar(df_casos, x = 'DATE', y = 'casos', color_discrete_sequence =['blue']*len(df_casos), labels = {'DATE': 'Fecha', 'casos': 'Número de casos'}, height = 600, width = 1000)
     
     st.plotly_chart(fig_casos, use_container_width=True)
@@ -360,9 +352,13 @@ if sidebar_options == 'Casos positivos':
                          height = 600, width = 1000)
         st.plotly_chart(fig_uca, use_container_width=True)
         
+# HOSPITALIZATIONS
+
 elif sidebar_options == 'Hospitalizados':
     
     'Próximamente'
+
+# DEATHS
 
 elif sidebar_options == 'Fallecidos':
     
@@ -581,7 +577,9 @@ elif sidebar_options == 'Fallecidos':
                          height = 600, width = 1000)
         st.plotly_chart(fig_uca, use_container_width=True)
     
+# VACCINATION
+
 elif sidebar_options == 'Vacunación':
     
     'Próximamente'
-# -----------------------------------------------------------
+    
