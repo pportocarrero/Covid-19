@@ -7,10 +7,11 @@ Currently, it shows -through a streamlit dashboard- data on confirmed cases and 
 The very near roadmap includes implementing new information on hospitalizations and vaccionation in Peru as well as more granular data to the provincial and district level.
 
 # Instructions
-Just run the dashboard.py as a streamlit app through Powershell prompt in Anaconda. 
+First, you need to run both ipynb files (positivos covid-19.ipynb and fallecidos covid-19.ipynb) to update the daily data. Then open a Powershell prompt from your anaconda installation and go to the folder where the dashboard file is located. Then run the following:
 
-You can use the python projects (positivos covid-19.ipynb and fallecidos covid-19.ipynb) to update the data daily.
-
+```bash
+streamlit run dashboard.py
+```
 # Source
 All data is taken from the open data repository of the Peruvian Government.
 
