@@ -9,6 +9,7 @@ import pandas as pd
 # Load data from external source
 
 path = r'C:/Users/pport/OneDrive/Projects/Covid-19/casos_positivos.xlsx'
+path_total = r'C:/Users/pport/OneDrive/Projects/Covid-19/total_casos_positivos.xlsx'
 path_deaths = r'C:/Users/pport/OneDrive/Projects/Covid-19/casos_fallecidos.xlsx'
 path_ama = r'C:/Users/pport/OneDrive/Projects/Covid-19/regiones/casos_amazonas.xlsx'
 path_anc = r'C:/Users/pport/OneDrive/Projects/Covid-19/regiones/casos_ancash.xlsx'
@@ -136,7 +137,8 @@ if sidebar_options == 'Casos positivos':
     st.write('Casos positivos reportados a través del portal de datos abiertos del Ministerio de Salud.')
 
 # Display the chart
-    fig_casos = px.bar(df_casos, x = 'DATE', y = 'casos', color_discrete_sequence =['blue']*len(df_casos), labels = {'DATE': 'Fecha', 'casos': 'Número de casos'}, height = 600, width = 1000)
+    fig_casos = px.bar(df_casos, x = 'DATE', y = 'casos', color_discrete_sequence =['blue']*len(df_casos), 
+                       labels = {'DATE': 'Fecha', 'casos': 'Número de casos'}, height = 600, width = 1000)
     
     st.plotly_chart(fig_casos, use_container_width=True)
     
