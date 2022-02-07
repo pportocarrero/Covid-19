@@ -9,7 +9,6 @@ import pandas as pd
 # Load data from external source
 
 path = r'C:/Users/pport/OneDrive/Projects/Covid-19/casos_positivos.xlsx'
-path_total = r'C:/Users/pport/OneDrive/Projects/Covid-19/total_casos_positivos.xlsx'
 path_deaths = r'C:/Users/pport/OneDrive/Projects/Covid-19/casos_fallecidos.xlsx'
 path_ama = r'C:/Users/pport/OneDrive/Projects/Covid-19/regiones/casos_amazonas.xlsx'
 path_anc = r'C:/Users/pport/OneDrive/Projects/Covid-19/regiones/casos_ancash.xlsx'
