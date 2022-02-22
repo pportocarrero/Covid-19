@@ -122,7 +122,7 @@ df_d_uca = pd.read_excel(path_d_uca)
 
 # Sidebar
 
-types = {'Información': ['Casos positivos', 'Hospitalizados', 'Fallecidos', 'Vacunación']}
+types = {'Información': ['Casos positivos', 'Hospitalizados', 'Fallecidos', 'Vacunación', 'Linajes']}
 types_df = pd.DataFrame(types)
 clist = types_df['Información'].unique()
 sidebar_options = st.sidebar.selectbox('Seleccione la información a visualizar:', clist)
@@ -587,4 +587,11 @@ elif sidebar_options == 'Fallecidos':
 elif sidebar_options == 'Vacunación':
     
     'Próximamente'
-    
+
+# LINEAGES
+
+elif sidebar_options == 'Linajes':
+
+    st.title('Análisis de linajes genómicos')
+
+    'Próximamente'
