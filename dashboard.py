@@ -9,8 +9,8 @@ import pandas as pd
 
 # Load data from external source
 
-os.chdir('C:/Users/pport/OneDrive/Projects/Covid-19/') # For Win
-#os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/') # For MacOS
+#os.chdir('C:/Users/pport/OneDrive/Projects/Covid-19/') # For Win
+os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/') # For MacOS
 
 path = r'casos_positivos.xlsx'
 path_deaths = r'casos_fallecidos.xlsx'
