@@ -598,3 +598,4 @@ elif sidebar_options == 'Linajes':
     st.title('Análisis de linajes genómicos')
 
     'Próximamente'
+#%%

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a32e09a-83fd-450d-8097-b615b4ad242a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Covid-19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Covid-19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lineages.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/lineages.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/positivos covid-19.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/positivos covid-19.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/casos_amazonas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/casos_amazonas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/casos_ancash.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/casos_ancash.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/casos_apurimac.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/casos_apurimac.xlsx" afterDir="false" />
@@ -79,7 +79,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -120,11 +120,17 @@
       <updated>1654272687411</updated>
       <workItem from="1654272694485" duration="122000" />
       <workItem from="1654272839217" duration="95000" />
+      <workItem from="1655738609863" duration="275000" />
+      <workItem from="1655739002795" duration="305000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Covid_19$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1654272912566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
