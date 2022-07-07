@@ -15,6 +15,8 @@ if platform.system() == 'Darwin':
     os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/')  # For MacOS
 
 path = r'casos_positivos.xlsx'
+path_lineages = r'linajes.xlsx'
+path_lineages_2 = r'linajes_2.xlsx'
 path_deaths = r'casos_fallecidos.xlsx'
 path_ama = r'regiones/casos_amazonas.xlsx'
 path_anc = r'regiones/casos_ancash.xlsx'
@@ -121,6 +123,9 @@ df_d_san = pd.read_excel(path_d_san)
 df_d_tac = pd.read_excel(path_d_tac)
 df_d_tum = pd.read_excel(path_d_tum)
 df_d_uca = pd.read_excel(path_d_uca)
+
+df_lineages = pd.read_excel(path_lineages)
+df_lineages_2 = pd.read_excel(path_lineages_2)
 
 # Sidebar
 
@@ -605,5 +610,23 @@ elif sidebar_options == 'Linajes':
 
     st.title('Análisis de linajes genómicos')
 
-    'Próximamente'
+    st.write('**Análisis por origen o denominación de la OMS**')
+    fig_lin = px.bar(
+        df_lineages_2,
+        x='month_year',
+        y='FECHA_CORTE',
+        color='labels'
+    )
+
+    st.plotly_chart(fig_lin, use_container_width=True)
+
+    st.write('**Análisis desagregado por linaje y sublinaje**')
+    fig_lin = px.bar(
+        df_lineages,
+        x='month_year',
+        y='FECHA_CORTE',
+        color='RESULTADO'
+    )
+
+    st.plotly_chart(fig_lin, use_container_width=True)
 # %%
