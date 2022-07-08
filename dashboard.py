@@ -8,11 +8,11 @@ import platform
 
 # Load data from external source
 
-if platform.system() == 'Windows':
-    os.chdir('C:/Users/pport/OneDrive/Projects/Covid-19/')  # For Win
+# if platform.system() == 'Windows':
+#    os.chdir('C:/Users/pport/OneDrive/Projects/Covid-19/')  # For Win
 
-if platform.system() == 'Darwin':
-    os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/')  # For MacOS
+# if platform.system() == 'Darwin':
+#    os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/')  # For MacOS
 
 path = r'casos_positivos.xlsx'
 path_lineages = r'linajes.xlsx'
