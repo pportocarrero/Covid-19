@@ -8,11 +8,11 @@ import platform
 
 # Load data from external source
 
-# if platform.system() == 'Windows':
-#    os.chdir('C:/Users/pport/OneDrive/Projects/Covid-19/')  # For Win
+if platform.system() == 'Windows':
+    os.chdir('C:/Users/pport/OneDrive/Projects/Covid-19/')  # For Win
 
-# if platform.system() == 'Darwin':
-#    os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/')  # For MacOS
+if platform.system() == 'Darwin':
+    os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/')  # For MacOS
 
 path = r'casos_positivos.xlsx'
 path_lineages = r'linajes.xlsx'
@@ -611,6 +611,7 @@ elif sidebar_options == 'Linajes':
     st.title('Análisis de linajes genómicos')
 
     st.write('**Análisis por origen o denominación de la OMS**')
+
     fig_lin = px.bar(
         df_lineages_2,
         x='month_year',
