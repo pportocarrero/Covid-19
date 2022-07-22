@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a32e09a-83fd-450d-8097-b615b4ad242a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Covid-19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Covid-19.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/positivos covid-19.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/positivos covid-19.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linajes.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/linajes.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linajes_2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/linajes_2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineages.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lineages.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/casos_amazonas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/casos_amazonas.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/casos_ancash.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/casos_ancash.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/casos_apurimac.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/casos_apurimac.xlsx" afterDir="false" />
@@ -54,11 +58,25 @@
       <change beforePath="$PROJECT_DIR$/regiones/fallecidos_tacna.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/fallecidos_tacna.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/fallecidos_tumbes.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/fallecidos_tumbes.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regiones/fallecidos_ucayali.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/regiones/fallecidos_ucayali.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/fallecidos covid-19.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/fallecidos covid-19.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/lineages.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/lineages.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/positivos covid-19.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/positivos covid-19.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,17 +89,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/pport/OneDrive/Studies/Mercados de capitales y teoría de portafolios/Asset management",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Covid-19" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Covid-19" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,6 +162,10 @@
       <workItem from="1654272839217" duration="95000" />
       <workItem from="1655738609863" duration="275000" />
       <workItem from="1655739002795" duration="305000" />
+      <workItem from="1657911828213" duration="10494000" />
+      <workItem from="1658162715269" duration="1343000" />
+      <workItem from="1658178441596" duration="2124000" />
+      <workItem from="1658192270668" duration="200000" />
     </task>
     <servers />
   </component>
@@ -133,6 +177,6 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Covid_19$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1654272912566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Covid_19$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1657926581108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
