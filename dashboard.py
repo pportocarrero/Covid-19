@@ -1,6 +1,7 @@
 # Imports
 
 import streamlit as st
+import streamlit_authenticator as stauth
 import plotly.express as px
 import os
 import pandas as pd
@@ -13,6 +14,11 @@ if platform.system() == 'Windows':
 
 if platform.system() == 'Darwin':
     os.chdir('/Users/pportocarrero/OneDrive/Projects/Covid-19/')  # For MacOS
+
+### LOGIN MANAGEMENT
+
+hashed_passwords = stauth.Hasher(['pportocarrero', 'admin']).generate()
+####################
 
 path = r'casos_positivos.xlsx'
 path_lineages = r'linajes.xlsx'
