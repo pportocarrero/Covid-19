@@ -36,16 +36,16 @@ path_hlv = r'regiones/casos_huancavelica.xlsx'
 path_hua = r'regiones/casos_huanuco.xlsx'
 path_ica = r'regiones/casos_ica.xlsx'
 path_jun = r'regiones/casos_junin.xlsx'
-path_lal = r'regiones/casos_lalibertad.xlsx'
+path_lal = r'regiones/casos_la libertad.xlsx'
 path_lam = r'regiones/casos_lambayeque.xlsx'
 path_lim = r'regiones/casos_lima.xlsx'
 path_lor = r'regiones/casos_loreto.xlsx'
-path_mad = r'regiones/casos_madrededios.xlsx'
+path_mad = r'regiones/casos_madre de dios.xlsx'
 path_moq = r'regiones/casos_moquegua.xlsx'
 path_pas = r'regiones/casos_pasco.xlsx'
 path_piu = r'regiones/casos_piura.xlsx'
 path_pun = r'regiones/casos_puno.xlsx'
-path_san = r'regiones/casos_sanmartin.xlsx'
+path_san = r'regiones/casos_san martin.xlsx'
 path_tac = r'regiones/casos_tacna.xlsx'
 path_tum = r'regiones/casos_tumbes.xlsx'
 path_uca = r'regiones/casos_ucayali.xlsx'
@@ -62,16 +62,16 @@ path_d_hlv = r'regiones/fallecidos_huancavelica.xlsx'
 path_d_hua = r'regiones/fallecidos_huanuco.xlsx'
 path_d_ica = r'regiones/fallecidos_ica.xlsx'
 path_d_jun = r'regiones/fallecidos_junin.xlsx'
-path_d_lal = r'regiones/fallecidos_lalibertad.xlsx'
+path_d_lal = r'regiones/fallecidos_la libertad.xlsx'
 path_d_lam = r'regiones/fallecidos_lambayeque.xlsx'
 path_d_lim = r'regiones/fallecidos_lima.xlsx'
 path_d_lor = r'regiones/fallecidos_loreto.xlsx'
-path_d_mad = r'regiones/fallecidos_madrededios.xlsx'
+path_d_mad = r'regiones/fallecidos_madre de dios.xlsx'
 path_d_moq = r'regiones/fallecidos_moquegua.xlsx'
 path_d_pas = r'regiones/fallecidos_pasco.xlsx'
 path_d_piu = r'regiones/fallecidos_piura.xlsx'
 path_d_pun = r'regiones/fallecidos_puno.xlsx'
-path_d_san = r'regiones/fallecidos_sanmartin.xlsx'
+path_d_san = r'regiones/fallecidos_san martin.xlsx'
 path_d_tac = r'regiones/fallecidos_tacna.xlsx'
 path_d_tum = r'regiones/fallecidos_tumbes.xlsx'
 path_d_uca = r'regiones/fallecidos_ucayali.xlsx'
@@ -167,12 +167,12 @@ if sidebar_options == 'Casos positivos':
 
     # Seleccionar por departamento
 
-    regiones = {'Departamento': ['Amazonas', 'Áncash', 'Apurímac', 'Arequipa', 'Ayacucho', 'Cajamarca',
-                                 'Callao', 'Cusco', 'Huancavelica', 'Huánuco', 'Ica', 'Junín',
-                                 'La Libertad', 'Lambayeque', 'Lima', 'Loreto', 'Madre de Dios', 'Moquegua',
-                                 'Pasco', 'Piura', 'Puno', 'San Martín', 'Tacna', 'Tumbes',
-                                 'Ucayali'
-                                 ]}
+    regiones = {
+        'Departamento': [
+            'Amazonas', 'Áncash', 'Apurímac', 'Arequipa', 'Ayacucho', 'Cajamarca', 'Callao', 'Cusco', 'Huancavelica', 'Huánuco', 'Ica', 'Junín', 'La Libertad', 'Lambayeque', 'Lima', 'Loreto', 'Madre de Dios', 'Moquegua', 'Pasco', 'Piura', 'Puno', 'San Martín', 'Tacna', 'Tumbes', 'Ucayali'
+                                 ]
+    }
+
     reg_df = pd.DataFrame(regiones)
     clist = reg_df['Departamento'].unique()
     reg_select = st.selectbox('Seleccione un departamento:', clist)
