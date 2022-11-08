@@ -1,7 +1,7 @@
 # Imports
 
 import streamlit as st
-import streamlit_authenticator as stauth
+# import streamlit_authenticator as stauth
 import plotly.express as px
 import os
 import pandas as pd
@@ -17,7 +17,7 @@ if platform.system() == 'Darwin':
 
 ### LOGIN MANAGEMENT
 
-hashed_passwords = stauth.Hasher(['pportocarrero', 'admin']).generate()
+# hashed_passwords = stauth.Hasher(['pportocarrero', 'admin']).generate()
 ####################
 
 path = r'casos_positivos.xlsx'
