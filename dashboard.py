@@ -159,9 +159,30 @@ if sidebar_options == 'Casos positivos':
              'Ministerio de Salud.')
 
     # Display the chart
-    fig_casos = px.bar(df_casos, x='DATE', y='casos',
-                       color_discrete_sequence=['blue'] * len(df_casos),
-                       labels={'DATE': 'Fecha', 'casos': 'Número de casos'}, height=600, width=1000)
+
+    fig_casos = px.line(df_casos, x='DATE', y='media semanal',
+                        color_discrete_sequence=['blue'] * len(df_casos),
+                        #labels=dict(x="Fecha", y="Promedio semanal"),
+                        height=600, width=1000
+                        )
+
+    fig_casos.add_scatter(x=df_casos['DATE'], y=df_casos['casos'],
+                          #labels=dict(x='Fecha', y='Casos diarios')
+                          )
+
+    fig_casos.update_traces(
+        #name='sample 1',
+        mode='lines',
+        #error_y=dict(color='black', width=5, thickness=1),
+        #marker=dict(color='red', size=10),
+        #line=dict(color='blue', width=3),
+        showlegend=True
+    )
+    #fig_casos = px.bar(df_casos, x='DATE', y='casos',
+    #                   color_discrete_sequence=['blue'] * len(df_casos),
+    #                   labels={'DATE': 'Fecha', 'casos': 'Número de casos'}, height=600, width=1000)
+
+    #fig_casos.add_scatter(df_casos, x='DATE', y='media semanal', labels={'media semanal': 'Media semanal de casos'})
 
     st.plotly_chart(fig_casos, use_container_width=True)
 
@@ -183,6 +204,7 @@ if sidebar_options == 'Casos positivos':
                          color_discrete_sequence=['red'] * len(df_ama),
                          labels={'DATE': 'Fecha', 'casos': 'Número de casos'},
                          height=600, width=1000)
+
         st.plotly_chart(fig_ama, use_container_width=True)
 
     elif reg_select == 'Áncash':

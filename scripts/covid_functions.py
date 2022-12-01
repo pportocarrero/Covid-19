@@ -73,6 +73,8 @@ def positivos(filename: str):
 
     aggregate = data.groupby(['DATE']).size()
 
+    weekly_mean = aggregate.rolling(7).mean()
+
     last_value = aggregate.iloc[-1]
 
     data['time'] = pd.to_datetime(data['DATE'])
@@ -81,7 +83,7 @@ def positivos(filename: str):
     date = date.astype("datetime64")
     date = date.sort_values(ascending=True)
 
-    df_aggregate = pd.DataFrame({'casos': aggregate, 'fecha': pd.date_range('03/06/20', periods=len(aggregate))})
+    df_aggregate = pd.DataFrame({'casos': aggregate, 'media semanal': weekly_mean, 'fecha': pd.date_range('03/06/20', periods=len(aggregate))})
 
     return df_aggregate.to_excel(filename + '.xlsx')
 
@@ -128,7 +130,9 @@ def positivos_region(departamento: str):
 
     agregado_region = casos.groupby(['DATE']).size()
 
-    df_region = pd.DataFrame({'casos': agregado_region})
+    weekly_mean = agregado_region.rolling(7).mean()
+
+    df_region = pd.DataFrame({'casos': agregado_region, 'media semanal': weekly_mean})
 
     return df_region.to_excel('regiones/casos_' + departamento + '.xlsx')
 
@@ -174,7 +178,10 @@ def fallecidos(filename: str):
 
     aggregate_deaths = data_deaths.groupby(['DATE_DEATH']).size()
 
-    df_aggregate_deaths = pd.DataFrame({'fallecidos': aggregate_deaths, 
+    weekly_mean = aggregate_deaths.rolling(7).mean()
+
+    df_aggregate_deaths = pd.DataFrame({'fallecidos': aggregate_deaths,
+                                        'media semanal': weekly_mean,
                                         'fecha': pd.date_range('03/03/20', periods = len(aggregate_deaths))})
 
     df_aggregate_deaths = pd.DataFrame({'fallecidos': aggregate_deaths})
